@@ -9,24 +9,11 @@ const HeroSection = () => {
   const onHover = () => {
     setHover(!hover)
   }
-
-
     return (
        <HeroContainer id= "home">
          <HeroBg>
-             <ImageBg className="image-bg" src= {Image} type='img'/>
+             <ImageBg src= {Image} type='img '/>
          </HeroBg>
-         <HeroContent>
-           <HeroH1>A New Shopping Experience</HeroH1>
-           <HeroP>
-             Clothes for everyday, styles for every possibility
-           </HeroP>
-           <HeroBtnWrapper>
-             <Button to='signup' onMouseEnter = {onHover} onMouseLeave = {onHover} primary='true' dark = 'true'>
-               Shop Now {hover ? <ArrowForward /> : <ArrowRight />}
-             </Button>
-           </HeroBtnWrapper>
-         </HeroContent>
        </HeroContainer>
     )
 }
