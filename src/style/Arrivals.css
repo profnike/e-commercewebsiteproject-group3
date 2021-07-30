@@ -1,3 +1,9 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
 .newBody{
     display: flex;
     justify-content: space-between;
@@ -27,4 +33,43 @@
     background-color: #000;
     color: white;
     border-radius: 10px;
+    width: 250px;
+    height: 30px;
+    font-size: 18px;
+    border: none;
+    
+  }
+  .basket:hover{
+    border: 1px white solid;
+   
+  }
+  .cart{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+  .info{
+    width: 100px;
+    border-radius: 5px;
+    margin-top: 5px;
+    
+  }
+  .head{
+    margin: 10px auto;
+    text-align: center;
+    color: white;
+  }
+  .arrival-head{
+    background-color: black;
+    color:white;
+  }
+  .links{
+    display: flex;
+    justify-content: center;
+  }
+  .foot-arrivals{
+    background-color: black;
+    height: 100px;
   }
