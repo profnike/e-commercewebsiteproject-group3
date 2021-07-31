@@ -41,6 +41,7 @@
   }
   .basket:hover{
     border: 1px white solid;
+    opacity: 0.8;
    
   }
   .cart{
@@ -56,8 +57,11 @@
     margin-top: 5px;
     
   }
+  .sections{
+    font-weight: bold;
+  }
   .head{
-    margin: 10px auto;
+    margin: 0px auto;
     text-align: center;
     color: white;
   }
@@ -71,5 +75,36 @@
   }
   .foot-arrivals{
     background-color: black;
-    height: 100px;
+    height:80px;
+    text-align: center;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+  .goup{
+    font-size: 20px;
+    margin: 5px;
+  }
+  @media screen and (max-width: 960px) {
+  .box{
+    width: 150px;
+    height: 255px;
+  }
+  .photo{
+    width: 100px;
+    height: 160px;
+  }
+  .basket{
+    height: 15px;
+    font-size: 12px;
+    width: 120px;
+    
+    border-radius: 3px;
+
+  }
+  .info{
+    margin-top: 2px;
+    font-size: 12px;
+  }
+}

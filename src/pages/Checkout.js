@@ -5,9 +5,13 @@ import '../style/Checkout.css'
 import {Link} from "react-router-dom"
 import ArrowBackIcon from '@material-ui/icons/ArrowBack'
 function Checkout(){
-    
+    let newer=[];
+    //const[newer, setNewer]=useState([])
+    if((localStorage.getItem("shopping-item")===null)){
+        localStorage.setItem("shopping-item",JSON.stringify(newer));
+    }
     let newsitem= JSON.parse(localStorage.getItem("shopping-item"));
-    let newer;
+  
     const[style, setStyle]=useState({color:"white"})
     const[newsitemer, setNewsitemer]=useState(newsitem )
     const[header, setHeader]=useState("" )
@@ -62,13 +66,13 @@ function Checkout(){
         total-=priceB
         console.log(total)
         console.log(priceitem)
-       newer= newsitem.filter((itemnew,indexnew)=>{
+      newer=newsitem.filter((itemnew,indexnew)=>{
         console.log(indexnew)
         console.log(index)
         finds=newsitem[index]
         
             return index!=indexnew
-           
+            //return item!=itemnew
         })
         setHead("You have " + newer.length + " item(s)")
         console.log(newer)
@@ -102,7 +106,7 @@ function Checkout(){
 
 
     return(
-        <div>
+        <div className="contain">
              <div className="head-area">
              <Link className="arrow-checkout" to='/new-arrivals'><ArrowBackIcon/> </Link><h2>{head}</h2>
            
@@ -115,15 +119,15 @@ function Checkout(){
        </div>
        <ul>
       { newsitemer.map((item,index) =>
-    <li key ={item.id} className="box" id="check">
+    <li key ={index} className="box-check" id="check">
         
-        <img className='photo' src={item.sroc} />
+        <img className='photo-check' src={item.sroc} />
         
            <div>{item.itemname}</div> 
-            {item.itemname}<br/>
+            
             {item.price}<br/>
             <div id="color">
-            <select name="color" id="dropdown">
+            <select className="selection" name="color" id="dropdown">
                 <option value="">Select color preference</option>
                 <option value="Black">Black</option>
                 <option value="Green">Green</option>
@@ -131,7 +135,7 @@ function Checkout(){
                 
             </select></div>
             <div id="size">
-            <select name="size" id="dropdown">
+            <select className="selection" name="size" id="dropdown">
                 <option value="">Select appropriate size</option>
                 <option value="XL">XL</option>
                 <option value="L">L</option>
@@ -143,10 +147,10 @@ function Checkout(){
             
     </li> 
     )}
-    
+   
     </ul>
+    <div className="foot-checkout"> Developed by Zara</div>
     
-    <div className="foot-checkout"></div>
        </div>
     )
 

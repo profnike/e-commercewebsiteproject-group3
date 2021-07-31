@@ -1,13 +1,13 @@
 .descriptionbox{
     max-width:80%;
     min-width:80%;
-    border: 1px solid black;
+    border: 2px solid black;
     margin:10px auto;
-    height: 80vh;
+    
     padding: 10px;
 }
 #head{
-    margin: 10px auto;
+    margin: 0px auto;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -29,9 +29,16 @@ li{
     display: flex;
     justify-content: center;
     margin: 10px 0px;
+   
+   
+   
   }
   .title{
       font-weight: bold;
+  }
+  .arrow{
+      color: black;
+      display: none;
   }
   @media screen and (min-width: 959px) {
     .descriptionbox{
@@ -42,6 +49,12 @@ li{
         height: 450px;
         
       }
+      .img-div{
+        display: flex;
+        justify-content: center;
+        margin: 10px 0px;
+       
+        height: 450px;}
       .text{
           margin-left: 20px;
           margin-top: 10px;

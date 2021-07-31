@@ -3,17 +3,20 @@ import image from '../images/project-image2.jpg'
 import {Link} from "react-router-dom"
 import react, {useState,useEffect}  from "react"
 import imgs from '../images/index'
+import imgsB from '../images/second'
 
 
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart'
+import { LinearScale } from '@material-ui/icons'
 
-function  Newarrivals(props){
+function  Newarrivals(){
+   
     const[count, setCount]=useState(0)
     const[cart, setCart]=useState([])
     const[select, setSelect]=useState([])
     const[add, setAdd]=useState("Add to ShoppingCart")
     const[toggle, setToggle]=useState(false)
-    const[style, setStyle]=useState({color:"red",display:"none"})
+    const[style, setStyle]=useState({})
 
 
     useEffect(()=>{
@@ -44,22 +47,47 @@ function  Newarrivals(props){
  },[])
 
 
-    let arr=[{ itemname:"Skirt",price:"$20,000",id:1,sroc:imgs.projectA},
-    { itemname:"Jacket",price:"$50,000",id:2,sroc:imgs.project2},
-    { itemname:"Jacket",price:"$20,000",id:3,sroc:imgs.project3},
-    { itemname:"Jacket",price:"$20,000",id:4,sroc:imgs.project4},
-    { itemname:"Jacket",price:"$20,000",id:5,sroc:imgs.project5},
-    { itemname:"Jacket",price:"$20,000",id:6,sroc:imgs.project6},
-    { itemname:"Jacket",price:"$20,000",id:7,sroc:imgs.project7},
-    { itemname:"dress",price:"$20,000",id:8,sroc:imgs.project8},
-    { itemname:"dress",price:"$20,000",id:9,sroc:imgs.project9},
-    { itemname:"dress",price:"$20,000",id:10,sroc:imgs.project10},
-    { itemname:"dress",price:"$20,000",id:11,sroc:imgs.project11},
-    { itemname:"dress",price:"$20,000",id:12,sroc:imgs.project12},
-    { itemname:"dress",price:"$20,000",id:13,sroc:imgs.project13},
-    { itemname:"dress",price:"$20,000",id:14,sroc:imgs.project14},
-    { itemname:"dress",price:"$20,000",id:15,sroc:imgs.project15},
+    let arr=[{ itemname:"Skirt",price:"$20",id:1,sroc:imgs.projectA},
+    { itemname:"Jacket",price:"$10",id:2,sroc:imgs.project2},
+    { itemname:"Jacket",price:"$25",id:3,sroc:imgs.project3},
+    { itemname:"Jacket",price:"$20",id:4,sroc:imgs.project4},
+    { itemname:"Skirt",price:"$40",id:5,sroc:imgs.project5},
+    { itemname:"Skirt",price:"$60",id:6,sroc:imgs.project6},
+    { itemname:"Jean Trouser",price:"$10",id:7,sroc:imgs.project7},
+    { itemname:"Top",price:"$15",id:8,sroc:imgs.project8},
+    { itemname:"Top",price:"$10",id:9,sroc:imgs.project9},
+    { itemname:"Top",price:"$10",id:10,sroc:imgs.project10},
+    { itemname:"Shirt",price:"$20",id:11,sroc:imgs.project11},
+    { itemname:"Jean Trouser",price:"$30",id:12,sroc:imgs.project12},
+    { itemname:"Pant Trouser",price:"$30",id:13,sroc:imgs.project13},
+    { itemname:"Gown",price:"$25",id:14,sroc:imgs.project14},
+    { itemname:"Gown",price:"$25",id:15,sroc:imgs.project15},
     ]
+
+    let arrB=[{ itemname:"Short",price:"$20",id:11,sroc:imgsB.project1},
+    { itemname:"Shirt",price:"$10",id:21,sroc:imgsB.project21},
+    { itemname:"Shirt",price:"$25",id:31,sroc:imgsB.project3},
+    { itemname:"Trouser",price:"$20",id:41,sroc:imgsB.project4},
+    { itemname:"Trouser",price:"$40",id:51,sroc:imgsB.project5},
+    { itemname:"Jacket",price:"$60",id:61,sroc:imgsB.project6},
+    { itemname:"Jacket",price:"$10",id:71,sroc:imgsB.project7},
+    { itemname:"Trouser",price:"$15",id:81,sroc:imgsB.project8},
+    { itemname:"Jacket",price:"$10",id:91,sroc:imgsB.project9},
+    { itemname:"Shirt",price:"$10",id:101,sroc:imgsB.project10},
+    { itemname:"Shirt",price:"$20",id:111,sroc:imgsB.project11},
+    { itemname:"Jeans",price:"$30",id:121,sroc:imgsB.project12},
+    { itemname:"Jeans",price:"$30",id:131,sroc:imgsB.project13},
+    { itemname:"Short",price:"$25",id:141,sroc:imgsB.project14},
+    { itemname:"Short",price:"$25",id:151,sroc:imgsB.project15},
+    ]
+
+
+    
+
+    function Goup(){
+       
+        window.scrollTo({top:0, behavior:'smooth'})
+    }
 
     let cartarr=[]
     let selectedarr=[]
@@ -67,35 +95,27 @@ function  Newarrivals(props){
     let   newarr=cartarr.slice()
     function addToCart(item,index){
        
-      
         
-        //count=cartarr.length
-        //cartarr.includes(index)===false
-        //add==="Add to ShoppingCart"
+        
+        
         
         if(add==="Add to ShoppingCart"){
-            alert('klo')
+            
             cartarr=cart.slice()
-   //cartarr.push(index)
+   
    cartarr.push(item)
-    console.log(cartarr)
+    
     setCart(cartarr.slice())
-    //setAdd("Added to the cart")
-    console.log(cart) 
+    
     selectedarr=select.slice()
     selectedarr.push(item)
     setSelect(selectedarr.slice())
-    console.log(selectedarr)
+    
     setCount(+1)
     let elem=cartarr[index] 
-    console.log(index)
-    console.log(cartarr) 
-    console.log(cartarr[index])
-    //indelement=cartarr.indexOf(elem) 
+     
     indelement=index 
-    console.log(elem)
-    console.log(indelement) 
-    //setStyle({display:"flex"})
+    
     setToggle(!toggle)
     let vall=cartarr[index]
     if(cartarr[index])
@@ -158,27 +178,9 @@ if((localStorage.getItem("indelement")==null) )
 
 
 
-if(toggle===80){
-    //indelement=cartarr.indexOf(index)
-    alert('kj')
-   let ans= cartarr.filter((items,indexes)=>{
-        return index!=indelement
-    })
-    //cartarr.splice(indelement,1)
-    console.log(cartarr)
-    console.log(index)
-    console.log(cartarr)
-   
+
     
-    setAdd("Add to ShoppingCart")
-    setCount(-1)
-   cart.length=cartarr.length  
-    console.log(cart.length)
-    setStyle({display:"flex"})
-}
-    
-    
-//toggle=!toggle    
+
             
             
             
@@ -194,15 +196,11 @@ if(toggle===80){
                 localStorage.setItem("shopping-number",JSON.stringify(cartarr));
                 
             }
-        //alert('hello')
-        console.log(cartarr.length)
-        console.log(index+1)
-        console.log(cartarr)
-        console.log(selectedarr)
+       
     }
 
     function removeFromCart(item,index){
-        setStyle({display:"none"})
+        
         console.log(newarr)
        let newsarr= JSON.parse(localStorage.getItem("shopping-number"));
        console.log(newsarr)
@@ -211,8 +209,7 @@ if(toggle===80){
        if(removeind===indelement){
         cart.length=cartarr.length
        }
-      //let indelements=cartarr.indexOf(index) 
-       console.log(indelement)
+      
     }
     
 
@@ -221,9 +218,10 @@ if(toggle===80){
     
 
 return(
-    <div  >
+    <div id="arrivals " >
+            
         <div className="arrival-head">
-        <h1 className='head'>Welcome to Zara's Gallery</h1>
+        <h1 className='head' >Welcome to Zara's Gallery</h1>
         <div className='arrival-head'>
                     
            <Link className="cart" to='/checkout'>My ShoppingCart &nbsp; <ShoppingCartIcon/> {cart.length}</Link>
@@ -243,11 +241,12 @@ return(
                           </div>
                   
            </div>
-           
+           <p className="sections">Female Section</p>
         <div  className="newBody">
+            
        <ul>
       { arr.map((item,index) =>
-    <li key ={item.id} className="box">
+    <li key ={index} className="box">
         
         <img className='photo' src={item.sroc} />
         
@@ -256,17 +255,40 @@ return(
             {item.price}<br/>
             
     
-            <button className="basket" onClick={(e)=>{ addToCart(item,index); }}>{add}</button>
-            <button style={style} onClick={(e)=>{ removeFromCart(item,index); }}>Remove from basket</button> 
+            <button className="basket" style={style} onClick={(e)=>{ addToCart(item,index); }}>{add}</button>
+            
             <Link to={"/description/" +index} ><button className="info">More info...</button></Link>
     </li> 
     )}
     
     </ul>
+   
+    
     
     </div>
-        <Link to= "/" style={{fontSize:"23px"}}>Go Back</Link>
-        <div className="foot-arrivals"></div>
+    <p className="sections">Male Section</p>
+    <ul>
+      { arrB.map((item,index) =>
+    <li key ={item.sroc}  className="box">
+        
+        <img className='photo' src={item.sroc} />
+        
+           <div>{item.itemname}</div> 
+            
+            {item.price}<br/>
+            
+    
+            <button className="basket"  onClick={(e)=>{ addToCart(item,index); }}>{add}</button>
+            
+            <Link to={"/descriptionB/" +index} ><button className="info">More info...</button></Link>
+    </li> 
+    )}
+    
+    </ul>
+        
+        
+    <button className="goup" onClick={(e)=>{ Goup() }}>Go up</button>
+        <div className="foot-arrivals">Developed by Zara</div>
     </div>
 
 )

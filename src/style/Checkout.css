@@ -31,7 +31,13 @@ ul{
 }
 .foot-checkout{
     background-color: black;
-    height:100px;
+    height:80px;
+    text-align: center;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 p{
     margin: 5px;
@@ -46,3 +52,43 @@ p{
 .arrow-checkout{
     color: white;
 }
+.contain{
+    display: flex;
+    flex-direction:column;
+    
+    justify-content: space-between;
+   height: 100vh;
+}
+.box-check{
+    text-align:center;
+    margin: 30px;
+    padding: 10px 20px;
+    border: 1px black solid;
+    border-radius: 8px;
+    width: 300px;
+    margin: 30px auto;
+    background-color: cadetblue;
+  }
+  .photo-check{
+    width: 250px;
+    height: 300px;
+  }
+  @media screen and (max-width: 960px) {
+    .box-check{
+      width: 250px;
+      height: 300px;
+    }
+.selection{
+    width:155px
+}
+.remove{
+    width:175px
+}
+.photo-check{
+    width: 200px;
+    height: 160px;
+  }
+  .foot-checkout{
+     
+      padding: 30px;
+  }}

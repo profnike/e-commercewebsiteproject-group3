@@ -6,6 +6,7 @@ import About from './pages/About';
 import Arrivals from './pages/Arrivals';
 import Services from './pages/Services';
 import Description from './pages/Description';
+import DescriptionB from './pages/DescriptionB';
 import Signup from './pages/Signup';
 import Checkout from './pages/Checkout';
 //import './style/Checkout.css'
@@ -22,7 +23,7 @@ function App() {
   return (
     <div className="App">
     <Switch>
-    
+    <Route exact path="/new-arrivals#head" ><Arrivals/></Route>
       <Route exact path="/" ><Homepage/></Route>
      <Route exact path="/new-arrivals" ><Arrivals/></Route>
       <Route exact path="/about" ><About/></Route> 
@@ -30,6 +31,8 @@ function App() {
       <Route exact path="/signup" ><Signup/></Route>
       <Route exact path="/checkout" ><Checkout/></Route> 
       <Route exact path="/description/:id" ><Description/></Route> 
+      <Route exact path="/descriptionB/:id" ><DescriptionB/></Route>
+
       
       
       </Switch>
