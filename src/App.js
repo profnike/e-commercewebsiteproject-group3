@@ -14,7 +14,7 @@ import './style/About.css'
 import './style/Signup.css'
 import './style/Services.css'
 import './style/Arrivals.css'
-import Navbar from './components/Navbar'; 
+// import Navbar from './components/Navbar'; 
 import { Route,Switch} from "react-router-dom"
 
 function App() {

@@ -1,5 +1,5 @@
 
-import image from '../images/project-image2.jpg'
+import image from '../images/female/project-image2.jpg'
 import {Link} from "react-router-dom"
 import react, {useState,useEffect}  from "react"
 import imgs from '../images/index'
