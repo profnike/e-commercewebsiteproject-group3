@@ -32,7 +32,7 @@ function SignUp() {
         if(password1 === password2) {
             const same = auth.filter(el=> el.username === username);
             if (same.length===0) {
-                auth = [...auth, {"username": username}, {"password": password1}]
+                auth = [...auth, {"username": username, "password": password1}]
                 localStorage.setItem('auth', JSON.stringify(auth));
                 localStorage.setItem('userloggedin', username);
                 setUsername(' ');
