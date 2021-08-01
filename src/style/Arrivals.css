@@ -50,6 +50,9 @@
     display: flex;
     justify-content: center;
     color: white;
+    
+    width: 180px;
+    margin: 0px auto;
   }
   .info{
     width: 100px;
@@ -60,10 +63,25 @@
   .sections{
     font-weight: bold;
   }
-  .head{
+  .head-welcome{
     margin: 0px auto;
+    
     text-align: center;
     color: white;
+  }
+  .Linkers-arrival{
+    margin-top: -20px;
+    margin-bottom: 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1rem;
+    position:sticky;
+    top:0;
+    color:white;
+    margin-right: 22px;
+    text-decoration: none;
+    z-index: 10;
   }
   .arrival-head{
     background-color: black;

@@ -3,6 +3,9 @@ import { HeroContainer, HeroBg, ImageBg, HeroContent, HeroH1, HeroP, HeroBtnWrap
 import Image from '../../images/female/project-image4.jpeg';
 import { Button } from '../ButtonElement';
 
+
+
+
 const HeroSection = () => {
   const [hover, setHover] = useState(false)
 
@@ -20,7 +23,11 @@ const HeroSection = () => {
               Clothes for Everyday, Style for Every Possibility.
            </HeroP>
            <HeroBtnWrapper>
+
+            
+
              <Button to="signup" onMouseEnter ={onHover} onMouseLeave= {onHover} primary='true' dark='true'>
+
                Shop Now {hover ? <ArrowForward /> : <ArrowRight />}
              </Button>
            </HeroBtnWrapper>
