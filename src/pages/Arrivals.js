@@ -221,24 +221,26 @@ return(
     <div id="arrivals " >
             
         <div className="arrival-head">
-        <h1 className='head' >Welcome to Zara's Gallery</h1>
-        <div className='arrival-head'>
-                    
-           <Link className="cart" to='/checkout'>My ShoppingCart &nbsp; <ShoppingCartIcon/> {cart.length}</Link>
-           </div>
+        <h1 className='head-welcome' >Welcome to Zara's Gallery</h1><br/>
+        
+       
          
                        <div className="links">
-                          <Link to="/about" className="Linkers">About</Link>
+                          <Link to="/about" className="Linkers-arrival">About</Link>
                         
                        
-                          <Link to="/" className="Linkers">Home</Link>
+                          <Link to="/" className="Linkers-arrival">Home</Link>
                         
                         
-                          <Link to="/services" className="Linkers">Services</Link>
+                          <Link to="/services" className="Linkers-arrival">Services</Link>
                         
                         
-                          <Link to="/signup" className="Linkers">Sign Up</Link>
+                          <Link to="/signup" className="Linkers-arrival">Sign Up</Link>
                           </div>
+                          <div className='arrival-head'>
+                    
+                    <Link className="cart" to='/checkout'>My ShoppingCart &nbsp; <ShoppingCartIcon/> {cart.length}</Link>
+                    </div>
                   
            </div>
            <p className="sections">Female Section</p>
