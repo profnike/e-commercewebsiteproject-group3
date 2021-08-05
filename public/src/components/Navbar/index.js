@@ -23,11 +23,11 @@ const Navbar = ({toggle}) => {
                           <Link to="/services" className="Linkers">Services</Link>
                         </NavItem>
                         <NavItem>
-                          <Link to="/contact" className="Linkers">Contact</Link>
+                          <Link to="/signup" className="Linkers">Sign Up</Link>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to= "/signup">Sign Up</NavBtnLink>
+                        <NavBtnLink to= "/signin">Sign In</NavBtnLink>
                     </NavBtn>
                 </NavbarContainer>
             </Nav>

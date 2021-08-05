@@ -221,23 +221,21 @@ return(
     <div id="arrivals " >
             
         <div className="arrival-head">
-        <h1 className='head-welcome' >Welcome to Zara Gallery</h1><br/>
+        <h1 className='head-welcome' >Welcome to Zara's Gallery</h1><br/>
         
        
          
                        <div className="links">
-
-                       <Link to="/" className="Linkers-arrival">Home</Link>
                           <Link to="/about" className="Linkers-arrival">About</Link>
                         
                        
-                          
+                          <Link to="/" className="Linkers-arrival">Home</Link>
                         
                         
                           <Link to="/services" className="Linkers-arrival">Services</Link>
                         
                         
-
+                          <Link to="/signup" className="Linkers-arrival">Sign Up</Link>
                           </div>
                           <div className='arrival-head'>
                     

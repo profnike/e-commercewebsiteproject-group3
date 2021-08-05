@@ -3,3 +3,12 @@
     padding: 0px;
     margin: 0px;
   }
+  .box-alert{
+    width: 250px;
+    height: 40px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    margin: 20px auto;
+  }
