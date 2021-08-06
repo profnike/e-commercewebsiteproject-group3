@@ -28,8 +28,8 @@ return(
       <div className="founderlist"> <div className="photo-div"><img className='photo-about'  src={arr[0]}/></div><p className="foundername"><LoremIpsum avgWordsPerSentence={1}/></p></div>
        <div className="founderlist"><div className="photo-div"><img className='photo-about' src= {arr[1]}/></div><p className="foundername"><LoremIpsum avgWordsPerSentence={1}/></p></div>
        <div className="founderlist"><div className="photo-div"><img className='photo-about' src= {arr[2]}/></div><p className="foundername"><LoremIpsum avgWordsPerSentence={1}/></p></div>
-       
        </div>
+     
        <div className="about-text">
            <LoremIpsum p={10}/>
        </div>

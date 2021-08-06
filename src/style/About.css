@@ -3,6 +3,10 @@
     padding: 0px;
     margin: 0px;
   }
+  body{
+    max-width:100%;
+   
+  }
 
 h1{
     margin: 0px auto;
@@ -15,6 +19,7 @@ h1{
     margin: 0px auto;
     text-align: center;
     background-color: cadetblue;
+    max-width: 100%;
     
 }
 .photo-about{
@@ -30,6 +35,7 @@ h1{
    max-height: 550px;
     min-width: 500px;
     border: 2px solid black;
+    border-radius: 10px;
   }
   .aboutBody{
     display: flex;
@@ -59,19 +65,28 @@ h1{
     .about-text{
       padding: 10px;
       margin-top: 20px;
+      
+    }
+    .About-div{
+      max-width:100%;
+      min-width:100%;
     }
     .aboutBody{
       display: inline-block;
     }
     .founders{
-      width: 280px;
+      max-width:260px;
+      min-width:220px;
       margin: 10px auto;
-      max-height: 700px;
+      max-height: 1000px;
+      min-height: 100px;
+      border-radius: 10px;
+      
 
     }
     .photo-about{
       display: flex;
-     justify-content: center;
+     justify-content: flex-start;
     }
     .photo-div{
       display: flex;

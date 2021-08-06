@@ -21,8 +21,9 @@ export const ServicesContainer = styled.div`
 
 export const ServicesWrapper = styled.div`
     max-width: 1000px;
-    margin: 0 auto;
-    margin-left: 50px;
+   
+    margin:0 auto;
+    margin-left: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
@@ -47,7 +48,7 @@ export const ServicesCard = styled.div`
     text-align: center;
     border-radius: 10px;
     max-height: 340px;
-    max-width: 400px;
+    max-width: 320px;
     width:100%;
     height:100%;
     padding: 20px;

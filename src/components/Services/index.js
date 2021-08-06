@@ -9,8 +9,8 @@ const Services = () => {
     return (
         <ServicesContainer id='services'>
             <ServicesH1>Our Services</ServicesH1>
-            <ServicesWrapper>
-                <ServicesCard>
+            <ServicesWrapper className="wrap">
+                <ServicesCard className="card-service">
                     <ServicesIcon>
                         <FaShippingFast />
                     </ServicesIcon>
