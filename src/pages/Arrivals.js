@@ -239,7 +239,7 @@ return(
                         
 
                           </div>
-                          <div className='arrival-head'>
+                          <div className='arrival-header'>
                     
                     <Link className="cart" to='/checkout'>My ShoppingCart &nbsp; <ShoppingCartIcon/> {cart.length}</Link>
                     </div>
@@ -247,6 +247,7 @@ return(
            </div>
            <div className="body-arrival">
            <div className="left-arrival">
+               <h1 id="Zara-head">Zara</h1>
                <h3 id="catg">Category</h3>
                <p><a href="#male">Male</a></p>
                <p><a href="#female">Female</a></p></div>

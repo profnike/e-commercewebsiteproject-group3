@@ -43,6 +43,9 @@
     padding: 10px;
     
   }
+  #zara-head{
+    margin-top: 100px;
+  }
   #catg{
     margin-top: 100px;
     margin-bottom: 10px;
@@ -88,6 +91,7 @@
     text-align: center;
     width: 180px;
     margin: 0px auto;
+    align-items: center;
    
   }
   .info{
@@ -123,6 +127,7 @@
     background-color: black;
     color:white;
     margin-left: 110px;
+    
   }
   .links{
     display: flex;
@@ -146,6 +151,7 @@
     width: 150px;
     height: 255px;
   }
+  
   .photo{
     width: 100px;
     height: 160px;
@@ -162,7 +168,5 @@
     margin-top: 2px;
     font-size: 12px;
   }
-  .cart{
-    margin-left: -30px;
-  }
+  
 }
