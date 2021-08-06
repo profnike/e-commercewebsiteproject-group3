@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/e-commercewebsiteproject-group3/static/css/main.331df6eb.chunk.css",
+    "main.js": "/e-commercewebsiteproject-group3/static/js/main.79581ffa.chunk.js",
+    "main.js.map": "/e-commercewebsiteproject-group3/static/js/main.79581ffa.chunk.js.map",
+    "runtime-main.js": "/e-commercewebsiteproject-group3/static/js/runtime-main.988804df.js",
+    "runtime-main.js.map": "/e-commercewebsiteproject-group3/static/js/runtime-main.988804df.js.map",
+    "static/js/2.aaa53e27.chunk.js": "/e-commercewebsiteproject-group3/static/js/2.aaa53e27.chunk.js",
+    "static/js/2.aaa53e27.chunk.js.map": "/e-commercewebsiteproject-group3/static/js/2.aaa53e27.chunk.js.map",
+    "index.html": "/e-commercewebsiteproject-group3/index.html",
+    "static/css/main.331df6eb.chunk.css.map": "/e-commercewebsiteproject-group3/static/css/main.331df6eb.chunk.css.map",
+    "static/js/2.aaa53e27.chunk.js.LICENSE.txt": "/e-commercewebsiteproject-group3/static/js/2.aaa53e27.chunk.js.LICENSE.txt",
+    "static/media/blouse1.jpg": "/e-commercewebsiteproject-group3/static/media/blouse1.105da6aa.jpg",
+    "static/media/blouse3.jpg": "/e-commercewebsiteproject-group3/static/media/blouse3.ddaceb26.jpg",
+    "static/media/gown5.jpg": "/e-commercewebsiteproject-group3/static/media/gown5.cacc2c8d.jpg",
+    "static/media/mjean1.jpg": "/e-commercewebsiteproject-group3/static/media/mjean1.57e534ad.jpg",
+    "static/media/mshorts3.jpg": "/e-commercewebsiteproject-group3/static/media/mshorts3.3ea27d88.jpg",
+    "static/media/project-image1.jpg": "/e-commercewebsiteproject-group3/static/media/project-image1.6a2fe15b.jpg",
+    "static/media/project-image2.jpg": "/e-commercewebsiteproject-group3/static/media/project-image2.00e88c2d.jpg",
+    "static/media/project-image3.jpg": "/e-commercewebsiteproject-group3/static/media/project-image3.b91adda1.jpg",
+    "static/media/project-image4.jpeg": "/e-commercewebsiteproject-group3/static/media/project-image4.39802e73.jpeg",
+    "static/media/project-image5.jpg": "/e-commercewebsiteproject-group3/static/media/project-image5.d7a95489.jpg",
+    "static/media/project-image6.jpg": "/e-commercewebsiteproject-group3/static/media/project-image6.c2eb8099.jpg",
+    "static/media/project-image7.jpg": "/e-commercewebsiteproject-group3/static/media/project-image7.4b1aedf1.jpg",
+    "static/media/shirt1.jpg": "/e-commercewebsiteproject-group3/static/media/shirt1.b8acfff6.jpg",
+    "static/media/shirt2.jpg": "/e-commercewebsiteproject-group3/static/media/shirt2.ceecd23e.jpg",
+    "static/media/skirt1.jpg": "/e-commercewebsiteproject-group3/static/media/skirt1.fd8d63d5.jpg",
+    "static/media/skirt2.jpg": "/e-commercewebsiteproject-group3/static/media/skirt2.205f9479.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.988804df.js",
+    "static/js/2.aaa53e27.chunk.js",
+    "static/css/main.331df6eb.chunk.css",
+    "static/js/main.79581ffa.chunk.js"
+  ]
+}

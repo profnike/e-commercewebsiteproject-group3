@@ -1,0 +1,128 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.newBody{
+    display: flex;
+    justify-content: space-between;
+  }
+  .photo{
+    width: 250px;
+    height: 300px;
+  }
+  .box{
+    list-style: none;
+  }
+  .box{
+    text-align:center;
+    margin: 30px;
+    padding: 10px 20px;
+    border: 1px black solid;
+    border-radius: 8px;
+    width: 300px;
+    margin: 30px auto;
+    background-color: cadetblue;
+  }
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .basket{
+    background-color: #000;
+    color: white;
+    border-radius: 10px;
+    width: 250px;
+    height: 30px;
+    font-size: 18px;
+    border: none;
+    
+  }
+  .basket:hover{
+    border: 1px white solid;
+    opacity: 0.8;
+   
+  }
+  .cart{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: white;
+    
+    width: 180px;
+    margin: 0px auto;
+  }
+  .info{
+    width: 100px;
+    border-radius: 5px;
+    margin-top: 5px;
+    
+  }
+  .sections{
+    font-weight: bold;
+  }
+  .head-welcome{
+    margin: 0px auto;
+    
+    text-align: center;
+    color: white;
+  }
+  .Linkers-arrival{
+    margin-top: -20px;
+    margin-bottom: 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1rem;
+    position:sticky;
+    top:0;
+    color:white;
+    margin-right: 22px;
+    text-decoration: none;
+    z-index: 10;
+  }
+  .arrival-head{
+    background-color: black;
+    color:white;
+  }
+  .links{
+    display: flex;
+    justify-content: center;
+  }
+  .foot-arrivals{
+    background-color: black;
+    height:80px;
+    text-align: center;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .goup{
+    font-size: 20px;
+    margin: 5px;
+  }
+  @media screen and (max-width: 960px) {
+  .box{
+    width: 150px;
+    height: 255px;
+  }
+  .photo{
+    width: 100px;
+    height: 160px;
+  }
+  .basket{
+    height: 15px;
+    font-size: 12px;
+    width: 120px;
+    
+    border-radius: 3px;
+
+  }
+  .info{
+    margin-top: 2px;
+    font-size: 12px;
+  }
+}
