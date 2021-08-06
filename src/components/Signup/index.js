@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom';
 import {Container,FormWrap, Icon, FormContent, Form, FormH1, FormLabel, FormInput, FormButton, Text} from './SignupElements'
 import '../../style/Signup.css'
 import {Link} from "react-router-dom"
+import ArrowBackIcon from '@material-ui/icons/ArrowBack'
 
 
 
@@ -76,6 +77,7 @@ function SignUp() {
             <Icon to="/">Zara House</Icon>
 
                 <FormContent>
+                   <Link to="/" className="iconform"><ArrowBackIcon/></Link> 
                     <Form action="#">
                         <FormH1>Sign up</FormH1>
 

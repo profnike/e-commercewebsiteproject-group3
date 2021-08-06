@@ -245,7 +245,14 @@ return(
                     </div>
                   
            </div>
-           <p className="sections">Female Section</p>
+           <div className="body-arrival">
+           <div className="left-arrival">
+               <h3 id="catg">Category</h3>
+               <p><a href="#male">Male</a></p>
+               <p><a href="#female">Female</a></p></div>
+           <div className="right-arrival">
+           <p className="sections" id="female">Female Section</p>
+           
         <div  className="newBody">
             
        <ul>
@@ -270,7 +277,7 @@ return(
     
     
     </div>
-    <p className="sections">Male Section</p>
+    <p className="sections" id="male">Male Section</p>
     <ul>
       { arrB.map((item,index) =>
     <li key ={item.sroc}  className="box">
@@ -293,6 +300,8 @@ return(
         
     <button className="goup" onClick={(e)=>{ Goup() }}>Go up</button>
         <div className="foot-arrivals">Developed by Zara</div>
+    </div>
+    </div>
     </div>
 
 )

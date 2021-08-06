@@ -32,9 +32,9 @@ function signin(){
                08132456378</p>
               <h3 className="subhead">Follow us on our social media platforms</h3> 
               <div className="icon">
-              <FacebookIcon/>
-             <p id="insta"> <  InstagramIcon/> </p>
-              <TwitterIcon/> 
+             <a href="#"> <FacebookIcon/></a>
+             <a href="#" id="insta"><p> <  InstagramIcon/></p></a>
+             <a href="#"><TwitterIcon/> </a>
               </div>
               </div>
             </div>

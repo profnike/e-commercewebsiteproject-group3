@@ -29,6 +29,41 @@
     display: flex;
     flex-wrap: wrap;
   }
+  .body-arrival{
+    display: flex;
+    
+  }
+  .left-arrival{
+    position: fixed;
+    top:0px;
+   height: 100vh;
+   width: 110px;
+    background-color: cadetblue;
+    border-right: 1px solid black;
+    padding: 10px;
+    
+  }
+  #catg{
+    margin-top: 100px;
+    margin-bottom: 10px;
+  }
+  .left-arrival a{
+    color: black;
+    text-decoration: none;
+    width: 100px;
+    
+    padding-bottom: 30px;
+  }
+  .left-arrival p{
+    margin-bottom: 20px;
+  }
+  .left-arrival a:hover{
+    
+    color: white;
+  }
+  .right-arrival{
+    margin-left: 110px;
+  }
   .basket{
     background-color: #000;
     color: white;
@@ -50,9 +85,10 @@
     display: flex;
     justify-content: center;
     color: white;
-    
+    text-align: center;
     width: 180px;
     margin: 0px auto;
+   
   }
   .info{
     width: 100px;
@@ -86,6 +122,7 @@
   .arrival-head{
     background-color: black;
     color:white;
+    margin-left: 110px;
   }
   .links{
     display: flex;
@@ -124,5 +161,8 @@
   .info{
     margin-top: 2px;
     font-size: 12px;
+  }
+  .cart{
+    margin-left: -30px;
   }
 }

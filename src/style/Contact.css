@@ -24,12 +24,14 @@ align-items: center;
     padding-top: 20px;
 }
 .icon{
+    font-size: large;
     display: flex;
     flex-direction: column;
     margin: 0px auto;
     align-items: center;
     color: blue;
 }
+
 #insta{
     color: rgb(245, 155, 90);
 }
