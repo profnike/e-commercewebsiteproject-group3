@@ -221,29 +221,39 @@ return(
     <div id="arrivals " >
             
         <div className="arrival-head">
-        <h1 className='head-welcome' >Welcome to Zara's Gallery</h1><br/>
+        <h1 className='head-welcome' >Welcome to Zara Gallery</h1><br/>
         
        
          
                        <div className="links">
+
+                       <Link to="/" className="Linkers-arrival">Home</Link>
                           <Link to="/about" className="Linkers-arrival">About</Link>
                         
                        
-                          <Link to="/" className="Linkers-arrival">Home</Link>
+                          
                         
                         
                           <Link to="/services" className="Linkers-arrival">Services</Link>
                         
                         
-                          <Link to="/signup" className="Linkers-arrival">Sign Up</Link>
+
                           </div>
-                          <div className='arrival-head'>
+                          <div className='arrival-header'>
                     
                     <Link className="cart" to='/checkout'>My ShoppingCart &nbsp; <ShoppingCartIcon/> {cart.length}</Link>
                     </div>
                   
            </div>
-           <p className="sections">Female Section</p>
+           <div className="body-arrival">
+           <div className="left-arrival">
+               <h1 id="Zara-head">Zara</h1>
+               <h3 id="catg">Category</h3>
+               <p><a href="#male">Male</a></p>
+               <p><a href="#female">Female</a></p></div>
+           <div className="right-arrival">
+           <p className="sections" id="female">Female Section</p>
+           
         <div  className="newBody">
             
        <ul>
@@ -268,7 +278,7 @@ return(
     
     
     </div>
-    <p className="sections">Male Section</p>
+    <p className="sections" id="male">Male Section</p>
     <ul>
       { arrB.map((item,index) =>
     <li key ={item.sroc}  className="box">
@@ -291,6 +301,8 @@ return(
         
     <button className="goup" onClick={(e)=>{ Goup() }}>Go up</button>
         <div className="foot-arrivals">Developed by Zara</div>
+    </div>
+    </div>
     </div>
 
 )

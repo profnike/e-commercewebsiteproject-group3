@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+  }
+
+h1{
+    margin: 0px auto;
+    padding: 10px;
+    margin-bottom: 30px;
+    color: rgb(8, 2, 1);
+}
+.About-head{
+    
+    margin: 0px auto;
+    text-align: center;
+    background-color: cadetblue;
+    
+}
+.photo-about{
+    width: 200px;
+    height: 150px;
+    
+    margin: 5px;
+  }
+  .founders{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+   max-height: 550px;
+    min-width: 500px;
+    border: 2px solid black;
+  }
+  .aboutBody{
+    display: flex;
+  }
+  .founderlist{
+    display: flex;
+  }
+  .foundername{
+    align-self: center;
+  }
+  .second-head{
+    text-align: center;
+  }
+ .About-div{
+   background-color: cadetblue;
+   margin-bottom: 50px;
+   
+ }
+ .arrow-about{
+  color: black;
+ }
+  
+  @media screen and (max-width: 960px) {
+    .founderlist{
+      display: inline-block;
+    }
+    .about-text{
+      padding: 10px;
+      margin-top: 20px;
+    }
+    .aboutBody{
+      display: inline-block;
+    }
+    .founders{
+      width: 280px;
+      margin: 10px auto;
+      max-height: 700px;
+
+    }
+    .photo-about{
+      display: flex;
+     justify-content: center;
+    }
+    .photo-div{
+      display: flex;
+      justify-content: center;
+    }
+    .foundername{
+      text-align: center;
+    }
+  }

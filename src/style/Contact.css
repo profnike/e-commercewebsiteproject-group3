@@ -1,0 +1,45 @@
+.contact{
+display: flex;
+align-items: center;
+}
+#head-contacts{
+   
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+}
+.body{
+    width:500px;
+    margin:30px auto;
+    border: 2px solid black;
+    text-align: center;
+    padding: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    height: 500px;
+}
+.subhead{
+    text-align: center;
+    padding-top: 20px;
+}
+.icon{
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    align-items: center;
+    color: blue;
+}
+
+#insta{
+    color: rgb(245, 155, 90);
+}
+.head-contact{
+    background-color: cadetblue;
+    display: flex;
+    color: black;
+}
+#arrow{
+    color: black;
+}

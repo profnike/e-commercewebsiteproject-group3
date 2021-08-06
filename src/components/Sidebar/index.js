@@ -15,17 +15,20 @@ const Sidebar = ({isOpen, toggle}) => {
                         About
                     </Link>
                     <Link to="/new-arrivals" className="sidebar" onClick = {toggle}>
-                        New Arrivals
+                       Shop
                     </Link>
-                    <Link to="/services" className="sidebar" onClick = {toggle}>
-                        Services
+                   
+                          <Link to="/services" className="sidebar" onClick = {toggle}
+                          >Services</Link>
+                       
+                       
+                    <Link to="/contact" className="sidebar" onClick = {toggle}>
+                       Contact Us
                     </Link>
-                    <Link to="/signup" className="sidebar" onClick = {toggle}>
-                        Sign Up
-                    </Link>
+                    
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to='/signin'>Sign In</SidebarRoute>
+                    <SidebarRoute to='/signup'> Sign Up</SidebarRoute>
                 </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>

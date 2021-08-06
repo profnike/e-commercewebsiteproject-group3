@@ -3,3 +3,40 @@
     padding: 0px;
     margin: 0px;
   }
+  .box-alert{
+    width: 250px;
+    height: 50px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    margin: 20px auto;
+    background-color: rgb(252, 249, 249);
+    
+  }
+  .box-create{
+    width: 350px;
+    height: 50px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    margin: 20px auto;
+    background-color: rgb(252, 249, 249);
+    
+  }
+  .box-exist{
+    width: 350px;
+    height: 50px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    margin: 20px auto;
+    background-color: rgb(252, 249, 249);
+    flex-direction: column;
+    
+  }
+  .iconform{
+    color: black;
+  }

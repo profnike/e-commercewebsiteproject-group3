@@ -4,10 +4,11 @@ import './App.css';
 import Homepage from  './pages/Homepage'
 import About from './pages/About';
 import Arrivals from './pages/Arrivals';
-import Services from './pages/Services';
+import Services from './components/Services/index';
 import Description from './pages/Description';
 import DescriptionB from './pages/DescriptionB';
 import Signup from './pages/Signup';
+import Contact from './pages/Contact';
 import Checkout from './pages/Checkout';
 //import './style/Checkout.css'
 import './style/About.css'
@@ -28,6 +29,7 @@ function App() {
       <Route exact path="/about" ><About/></Route> 
       <Route exact path="/services" ><Services/></Route> 
       <Route exact path="/signup" ><Signup/></Route>
+      <Route exact path="/contact" ><Contact/></Route>
       <Route exact path="/checkout" ><Checkout/></Route> 
       <Route exact path="/description/:id" ><Description/></Route> 
       <Route exact path="/descriptionB/:id" ><DescriptionB/></Route>

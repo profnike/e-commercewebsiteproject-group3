@@ -1,73 +1,96 @@
 import React, {useState} from 'react'
 import { useHistory } from 'react-router-dom';
 import {Container,FormWrap, Icon, FormContent, Form, FormH1, FormLabel, FormInput, FormButton, Text} from './SignupElements'
+import '../../style/Signup.css'
+import {Link} from "react-router-dom"
+import ArrowBackIcon from '@material-ui/icons/ArrowBack'
 
 
 
 
 function SignUp() {
 
-    const [username, setUsername] = useState('');
 
-    const [password1, setPassword1] = useState('');
-    const [password2, setPassword2] = useState('');
+    
+
+    const [username, setUsername] = useState('');
+    const [stylealert, setStylealert] = useState({});
+    const [stylexist, setStylexist] = useState({});
+    const [stylecomplete, setStylecomplete] = useState({});
+    const [email, setEmail] = useState('');
+    
 
     
 
     const history = useHistory();
 
     const afterSignup = () => {
-        alert('Your account has been created successfuly.');
-        history.push("/");
+        setStylecomplete({display:"flex"})
+        //alert('Your account has been created successfuly.');
+       setTimeout(function(){history.push("/")},1000);
     }
 
 
     let auth = JSON.parse(localStorage.getItem('auth'));
 
-    const handleSignup = () => {
+    const handleSignup = (e) => {
+        e.preventDefault()
         if(auth === null){
             auth = [];
         }
+        if((username==="")||(email==="")){
+            setStylealert({display:"flex"})
+            
+        }
+        else{
 
-        if(password1 === password2) {
+        
             const same = auth.filter(el=> el.username === username);
             if (same.length===0) {
-                auth = [...auth, {"username": username, "password": password1}]
+                auth = [...auth, {"username": username, "email": email}]
                 localStorage.setItem('auth', JSON.stringify(auth));
                 localStorage.setItem('userloggedin', username);
                 setUsername(' ');
-                setPassword1('');
-                setPassword2('');
+                setEmail('');
+                
                 afterSignup();
                 
-            } else {
-                alert(username + " exists!")
-            }
+            } 
+            else{setStylexist({display:"flex"})}
 
-        } else {
-            alert("password does not match");
-        }
+        
     }
+}
 
     return (
         <>
           <container>
+             
+              <div className="box-alert" style={stylealert}>Incomplete input!
+              </div>
+              <div className="box-create" style={stylecomplete}>Your account has been created successfuly.<br/>
+              </div>
+              <div className="box-exist" style={stylexist}>This account  already exists!<br/>
+              <Link to="/"><button>OK</button></Link>
+              </div>
             <FormWrap>
-                <Icon to="/">Zara House</Icon>
+            <Icon to="/">Zara House</Icon>
+
                 <FormContent>
+                   <Link to="/" className="iconform"><ArrowBackIcon/></Link> 
                     <Form action="#">
                         <FormH1>Sign up</FormH1>
 
                          {/* input for username */}
-                        <FormLabel htmlFor="for">Username</FormLabel>
-                        <FormInput type="text" value={username} onChange = { e => setUsername(e.target.value)} required/>
+                        <FormLabel htmlFor="for">Name</FormLabel>
+                        <FormInput type="text" value={username} onChange = { e => {setUsername(e.target.value); setStylealert({display:"none"});setStylexist({display:"none"})}} required/>
                         
-                        <FormLabel htmlFor="for">Password</FormLabel>                       
-                        <FormInput type="password" value={password1} onChange={e=> setPassword1(e.target.value)} required/>
-                            
+                       
+                        <FormLabel htmlFor="for">Email</FormLabel>                       
+                        <FormInput type="email" name="email" value={email} onChange={e=> {setEmail(e.target.value);setStylealert({display:"none"});setStylexist({display:"none"})}} required/>
+                        
                         {/* confirm password */}
-                        <FormLabel htmlFor="for">Confirm Password</FormLabel>
-                        <FormInput type="password" value={password2} onChange={e=> setPassword2(e.target.value)} required/>
+                        
                         
 
                         <FormButton type="submit" onClick={handleSignup} >Signup</FormButton>

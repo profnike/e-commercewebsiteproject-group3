@@ -1,6 +1,10 @@
 import React, {useState} from 'react'
 import { HeroContainer, HeroBg, ImageBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements'
 import Image from '../../images/female/project-image4.jpeg';
+
+import { Button } from '../ButtonElement';
+import {Link} from "react-router-dom"
+
 // import { Button } from '../ButtonElement';
 // import {NavBtn} from '../Navbar/NavbarElements'
 
@@ -32,11 +36,11 @@ const HeroSection = () => {
 
             
 
-            <button className = "herobtn" to="/new-arrivals">
+            <Link to="/new-arrivals" id="shop-button"><button className = "herobtn" to="/new-arrivals">
                {/* onClick ={onClick} onMouseEnter ={onHover} onMouseLeave= {onHover} primary='true' dark='true' */}
               Shop Now 
                {/* {hover ? <ArrowForward /> : <ArrowRight />} {onClick}  */}
-            </button>
+            </button></Link>
            </HeroBtnWrapper>
          </HeroContent>
        </HeroContainer>
