@@ -31,7 +31,7 @@ const HeroSection = () => {
 
                Shop Now {hover ? <ArrowForward /> : <ArrowRight />}
              </Button>
-             <Link to="/new-arrivals"> <button></button></Link>
+           
            </HeroBtnWrapper>
          </HeroContent>
        </HeroContainer>

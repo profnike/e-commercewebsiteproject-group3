@@ -23,7 +23,7 @@ const Navbar = ({toggle}) => {
                           <Link to="/services" className="Linkers">Services</Link>
                         </NavItem>
                         <NavItem>
-                          <Link to="/contact" className="Linkers">Contact</Link>
+                          <Link to="/contact" className="Linkers">Contact Us</Link>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>

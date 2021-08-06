@@ -1,26 +1,42 @@
 import React, {useState} from 'react'
 import SignIn from '../components/Signin';
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart'
+import FacebookIcon from '@material-ui/icons/Facebook'
+import InstagramIcon from '@material-ui/icons/Instagram'
+import TwitterIcon from '@material-ui/icons/Twitter'
+import ArrowBackIcon from '@material-ui/icons/ArrowBack'
+import '../style/Contact.css'
+import {Link} from "react-router-dom"
 
 function signin(){
 
 
     return(
         <div>
-            <div>
-                <h1>Contact Us</h1>
-               <h3>For more information about our products </h3>
-               <p>Call:<br/>
+            <div className="head-contact">
+           <Link id="arrow" to="/"><ArrowBackIcon/></Link>
+                <h1 id="head-contacts">Contact Us</h1>
+            </div>
+            
+                <div className="contact">
+               <div className="body">
+               <h3 className="subhead">For more information on our products </h3>
+               <h4>Call:</h4>
+               <p>08097872345<br/>
+               07022348990<br/>
+               08132456378</p>
+               <h3 className="subhead">For complaints/suggestions</h3>
+               <h4>Call:</h4>
+               <p>
                08097872345<br/>
                07022348990<br/>
                08132456378</p>
-               <h3>For complaints/suggestions</h3>
-               <p>Call:<br/>
-               08097872345<br/>
-               07022348990<br/>
-               08132456378</p>
-              <h3>Follow us on our social media platforms</h3> 
-              <ShoppingCartIcon/> 
+              <h3 className="subhead">Follow us on our social media platforms</h3> 
+              <div className="icon">
+              <FacebookIcon/>
+             <p id="insta"> <  InstagramIcon/> </p>
+              <TwitterIcon/> 
+              </div>
+              </div>
             </div>
         </div>
     )

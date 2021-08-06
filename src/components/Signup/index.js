@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import { useHistory } from 'react-router-dom';
 import {Container,FormWrap, Icon, FormContent, Form, FormH1, FormLabel, FormInput, FormButton, Text} from './SignupElements'
 import '../../style/Signup.css'
+import {Link} from "react-router-dom"
 
 
 
@@ -13,6 +14,8 @@ function SignUp() {
 
     const [username, setUsername] = useState('');
     const [stylealert, setStylealert] = useState({});
+    const [stylexist, setStylexist] = useState({});
+    const [stylecomplete, setStylecomplete] = useState({});
     const [email, setEmail] = useState('');
     
 
@@ -21,20 +24,22 @@ function SignUp() {
     const history = useHistory();
 
     const afterSignup = () => {
-        alert('Your account has been created successfuly.');
-        history.push("/");
+        setStylecomplete({display:"flex"})
+        //alert('Your account has been created successfuly.');
+       setTimeout(function(){history.push("/")},1000);
     }
 
 
     let auth = JSON.parse(localStorage.getItem('auth'));
 
-    const handleSignup = () => {
+    const handleSignup = (e) => {
+        e.preventDefault()
         if(auth === null){
             auth = [];
         }
         if((username==="")||(email==="")){
             setStylealert({display:"flex"})
-            alert("incomplete input")
+            
         }
         else{
 
@@ -50,6 +55,7 @@ function SignUp() {
                 afterSignup();
                 
             } 
+            else{setStylexist({display:"flex"})}
 
         
     }
@@ -60,20 +66,26 @@ function SignUp() {
           <container>
              
               <div className="box-alert" style={stylealert}>Incomplete input!
-               <button onClick={(e)=>{  }}>OK</button></div>
+              </div>
+              <div className="box-create" style={stylecomplete}>Your account has been created successfuly.<br/>
+              </div>
+              <div className="box-exist" style={stylexist}>This account  already exists!<br/>
+              <Link to="/"><button>OK</button></Link>
+              </div>
             <FormWrap>
-                <Icon to="/">Zara House</Icon>
+            <Icon to="/">Zara House</Icon>
+
                 <FormContent>
                     <Form action="#">
                         <FormH1>Sign up</FormH1>
 
                          {/* input for username */}
                         <FormLabel htmlFor="for">Name</FormLabel>
-                        <FormInput type="text" value={username} onChange = { e => {setUsername(e.target.value); setStylealert({display:"none"})}} required/>
+                        <FormInput type="text" value={username} onChange = { e => {setUsername(e.target.value); setStylealert({display:"none"});setStylexist({display:"none"})}} required/>
                         
                        
                         <FormLabel htmlFor="for">Email</FormLabel>                       
-                        <FormInput type="email" name="email" value={email} onChange={e=> {setEmail(e.target.value);setStylealert({display:"none"})}} required/>
+                        <FormInput type="email" name="email" value={email} onChange={e=> {setEmail(e.target.value);setStylealert({display:"none"});setStylexist({display:"none"})}} required/>
                         
                         {/* confirm password */}
                         
