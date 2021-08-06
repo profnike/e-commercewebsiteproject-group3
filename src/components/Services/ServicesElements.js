@@ -44,11 +44,16 @@ export const ServicesCard = styled.div`
     display: flex;
     flex-direction: flex-start;
     align-items: center;
+    text-align: center;
     border-radius: 10px;
     max-height: 340px;
-    padding: 30px;
+    max-width: 400px;
+    width:100%;
+    height:100%;
+    padding: 20px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
+    white-space: normal;
     
     &:hover {
         transform: scale(1.02);
@@ -72,6 +77,7 @@ export const ServicesH1 = styled.h1`
     font-size: 2.5rem;
     color: #fff;
     margin-top: 10px;
+    margin-left: 80px;
     margin-bottom: 45px;
 
     @media screen and (max-width: 480px) {
@@ -81,11 +87,15 @@ export const ServicesH1 = styled.h1`
 
 export const ServicesH2 = styled.h2`
     font-size: 1rem;
+    width:100%;
     margin-bottom: 10px;
+    margin-right: 30px;
 `
 
 export const ServicesP = styled.p`
     font-size: 1rem;
     text-align: center;
+    padding: 10px;
+    white-space: normal;
 `
 
