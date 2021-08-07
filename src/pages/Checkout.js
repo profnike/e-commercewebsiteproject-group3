@@ -107,6 +107,8 @@ function Checkout(){
 
     return(
         <div className="contain">
+            <div className="container-check">
+            <div>
              <div className="head-area">
              <Link className="arrow-checkout" to='/new-arrivals'><ArrowBackIcon/> </Link><h2>{head}</h2>
            
@@ -149,7 +151,11 @@ function Checkout(){
     )}
    
     </ul>
+    </div>
+    <div>
     <div className="foot-checkout"> Developed by Zara</div>
+    </div>
+    </div>
     
        </div>
     )
