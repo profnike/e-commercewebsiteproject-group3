@@ -153,7 +153,7 @@ function Checkout(){
     </ul>
     </div>
     <div>
-    
+    <div className="foot-checkout"> Developed by Zara</div>
     </div>
     </div>
     
