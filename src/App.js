@@ -9,7 +9,10 @@ import Description from './pages/Description';
 import DescriptionB from './pages/DescriptionB';
 import Signup from './pages/Signup';
 import Contact from './pages/Contact';
+import Shop from './pages/Shop';
 import Checkout from './pages/Checkout';
+import Cart from './pages/Cart';
+import Details from './pages/Details';
 //import './style/Checkout.css'
 import './style/About.css'
 import './style/Signup.css'
@@ -33,6 +36,9 @@ function App() {
       <Route exact path="/checkout" ><Checkout/></Route> 
       <Route exact path="/description/:id" ><Description/></Route> 
       <Route exact path="/descriptionB/:id" ><DescriptionB/></Route>
+      <Route exact path="/details/:id" ><Details/></Route>
+      <Route exact path="/shop" ><Shop/></Route>
+      <Route exact path="/cart" ><Cart/></Route>
      </Switch>
     </div>
     

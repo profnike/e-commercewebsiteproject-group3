@@ -36,7 +36,7 @@ const HeroSection = () => {
 
             
 
-            <Link to="/new-arrivals" id="shop-button"><button className = "herobtn" to="/new-arrivals">
+            <Link to="/shop" id="shop-button"><button className = "herobtn" to="/new-arrivals">
                {/* onClick ={onClick} onMouseEnter ={onHover} onMouseLeave= {onHover} primary='true' dark='true' */}
               Shop Now 
                {/* {hover ? <ArrowForward /> : <ArrowRight />} {onClick}  */}

@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.columcard{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    line-height: 10px;
+    
+    
+}
+.cardtext{
+  
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.cardtext p{
+    line-height: 15px;
+}
+.cardcontainer{
+    padding: 10px;
+    margin-left: 10px;
+    display:flex;
+    flex-direction:column;
+      border:1px solid black;
+      border-radius: 10px;
+     min-height: 120px;
+    align-self: flex-start;
+    
+     margin-right: 5px;
+}
+.rowDivs{
+    margin-top: 240px;
+   
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+        
+   
+}
+.shopHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding: 10px;
+    max-width: 100%;
+    min-width: 100%;
+    background-color: rgb(234, 238, 236);
+    font-size: 1.5rem;
+    z-index: 10000;
+    font-weight: bold;
+    padding-left: 24px;
+    padding-right: 24px;
+    line-height: 16px;
+   position: fixed;
+   margin-bottom: 2000px;
+  
+  
+    
+}
+.shopHead button{
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.shopHead button:focus{
+    background-color: black;
+   box-shadow: none;
+}
+.shopHead button:hover{
+    background-color: black; 
+    box-shadow: none;
+ }
+.rowDivs button{
+    background-color: black;
+    color: white;
+    border: none;
+}
+.payment{
+    font-size: 18px;
+}
+.rowDivs button:focus{
+    background-color: black; 
+    box-shadow: none;
+ }
+ .rowDivs button:hover{
+    background-color: black; 
+    box-shadow: none;
+ }
+.g-4{
+    display: flex;
+    justify-content: flex-start;
+   
+}
+@media screen and (max-width:960px){
+    .rowDivs{
+        justify-content: flex-start;
+    }
+    .cardcontainer{
+        max-width: 150px;
+     min-width: 150px;
+    }
+    .shopHead{
+        padding-left: 5px;
+        padding-right: 5px;
+        
+    }
+}

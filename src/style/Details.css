@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.divrow{
+  
+   max-width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+   
+   
+}
+.cardcontainde{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+
+}
+@media screen and (max-width:960px) {
+    .divrow{
+        max-width: 100%;
+        min-width: 100%;
+        
+        flex-direction: column;
+        flex-wrap: wrap;
+        word-break: break-all;
+       
+    }
+    .cardcontainde{
+        max-width: 250px;
+        min-width: 180px;
+        margin-bottom: 10px;
+    }
+}
+    @media screen and (min-width:959px) {
+        .divrow{
+            margin: 20px auto;
+            
+        
+        }
+    }
+

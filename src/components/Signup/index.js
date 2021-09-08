@@ -71,7 +71,7 @@ function SignUp() {
               <div className="box-create" style={stylecomplete}>Your account has been created successfuly.<br/>
               </div>
               <div className="box-exist" style={stylexist}>This account  already exists!<br/>
-              <Link to="/"><button>OK</button></Link>
+              <Link to="/"><button className="okay">OK</button></Link>
               </div>
             <FormWrap>
             <Icon to="/">Zara House</Icon>

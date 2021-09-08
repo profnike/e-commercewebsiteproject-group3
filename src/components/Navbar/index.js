@@ -17,7 +17,7 @@ const Navbar = ({toggle}) => {
                           <Link to="/about" className="Linkers">About</Link>
                         </NavItem>
                         <NavItem>
-                          <Link to="/new-arrivals" className="Linkers">Shop</Link>
+                          <Link to="/shop" className="Linkers">Shop</Link>
                         </NavItem>
                         <NavItem>
                           <Link to="/services" className="Linkers">Services</Link>

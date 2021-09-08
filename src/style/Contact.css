@@ -17,7 +17,7 @@ align-items: center;
     padding-top: 20px;
     margin-top: 20px;
     border-radius: 20px;
-    height: 500px;
+    min-height: 500px;
 }
 .subhead{
     text-align: center;
@@ -36,7 +36,7 @@ align-items: center;
     color: rgb(245, 155, 90);
 }
 .head-contact{
-    background-color: cadetblue;
+    background-color: rgb(234, 238, 236);
     display: flex;
     color: black;
 }

@@ -18,7 +18,7 @@ h1{
     
     margin: 0px auto;
     text-align: center;
-    background-color: cadetblue;
+    background-color: rgb(234, 238, 236);
     max-width: 100%;
     
 }
@@ -50,7 +50,7 @@ h1{
     text-align: center;
   }
  .About-div{
-   background-color: cadetblue;
+  background-color: rgb(234, 238, 236);
    margin-bottom: 50px;
    
  }
