@@ -4,9 +4,12 @@ align-items: center;
 }
 #head-contacts{
    
-    text-align: center;
+   
     justify-content: center;
     align-self: center;
+    text-align: center;
+    padding: 10px;
+    margin: 0px auto;
 }
 .body{
     width:500px;

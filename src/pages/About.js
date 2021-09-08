@@ -20,7 +20,7 @@ return(
     <div >
         <div className='About-div'>
          <Link className="arrow-about" to='/'><ArrowBackIcon/> </Link>
-        <h1 className='About-head' >About Zara </h1><br/>
+        <h2 className='About-head'> About Zara </h2><br/>
         </div>
         <div  className="aboutBody" >
         <div className="founders">

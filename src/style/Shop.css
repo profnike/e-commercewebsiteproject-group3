@@ -68,7 +68,7 @@
   padding-bottom: 50px;
     display: flex;
     justify-content: center;
-   margin-top: 150px;
+  
    min-width: 100%;
     max-width: 100%;
 }
@@ -163,14 +163,8 @@
         padding-right: 0px;
         flex-wrap: wrap;
     justify-content: center;}
-        .cardcontain{
-            margin-left: 0px;
-            margin-right: 0px;
-        }
-        .cardcontain{
-            margin-right: 0px;
-            margin-left: 0px;
-        }
+   
+        
         .shopTitle{
             padding-left: 10px;
             padding-right: 10px;

@@ -23,6 +23,11 @@
     border: 1px solid black;
 
 }
+.infoHead{
+    padding: 10px;
+    background-color: rgb(234, 238, 236);
+    text-align: center;
+}
 @media screen and (max-width:960px) {
     .divrow{
         max-width: 100%;

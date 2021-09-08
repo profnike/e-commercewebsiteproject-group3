@@ -14,7 +14,7 @@ function signin(){
         <div>
             <div className="head-contact">
            <Link id="arrow" to="/"><ArrowBackIcon/></Link>
-                <h1 id="head-contacts">Contact Us</h1>
+                <h2 id="head-contacts" style={{textAlign:"center"}}>Contact Us</h2>
             </div>
             
                 <div className="contact">

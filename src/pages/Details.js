@@ -57,6 +57,7 @@ function Details() {
 
     return (
       <div className="Details">
+        <h2 className="infoHead">Product Info</h2>
        <div className="divrow"> 
   <div>
      
