@@ -74,7 +74,7 @@ function SignUp() {
               <Link to="/"><button className="okay">OK</button></Link>
               </div>
             <FormWrap>
-            <Icon to="/">Zara House</Icon>
+           
 
                 <FormContent>
                    <Link to="/" className="iconform"><ArrowBackIcon/></Link> 

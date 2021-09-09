@@ -21,38 +21,8 @@ function Details() {
         return val
     })
     
-    console.log(realv)
-    //let  describeitem;
-    //setItemcart(describeitem)
-    //console.log(describeitem)
-   
-   //useEffect(()=>{
-       
-        //fetch('https://fakestoreapi.com/products/')
-        //.then(res=>res.json())
-        //.then(json=>{console.log(json)
-        //setItemcart(json)
-        
-       // })
-      // describeitem= JSON.parse(localStorage.getItem("shoppingstuffs"));
-      //console.log(describeitem)
-        
-    //setItemcart(describeitem)
-   //console.log(itemcart)
     
-   // },[])
-   
-    console.log(id)
-    //let selected;
-    //console.log(describeitem)
-    //let items=itemcart.filter((val,index)=>{
-        //if(val.id==id){
-        // selected= val
-       // }
-        //return val.id==id
-       // return val
-    //})
-    //console.log(items)
+    
     
 
     return (

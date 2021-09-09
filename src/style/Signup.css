@@ -49,7 +49,12 @@
   }
   .iconform{
     color: black;
+    position: fixed;
+   top: 0px;
+    
   }
+  .iconform:hover{
+    color: black};
   .okay{align-self: flex-end;
    
     margin-left: 250px;

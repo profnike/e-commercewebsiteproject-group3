@@ -35,9 +35,11 @@ function Cart() {
       console.log(pricearr)
 
       let total=0;
+      let totalnew=0
     for(let i=0; i<pricearr.length;i++){
 
-      total+=pricearr[i]
+       totalnew+=pricearr[i]
+      total=totalnew.toFixed(2)
     } 
        
       
@@ -52,7 +54,8 @@ function Cart() {
            itemvalue=val
            itemindex=index
            let itemprice=val.price
-           total-=itemprice
+           totalnew-=itemprice
+           total=totalnew.toFixed(2)
             cartRemain=cartitems.filter((vals,indexs)=>{
               
                     let indexremove=cartitems.indexOf(val)
@@ -98,7 +101,7 @@ function Cart() {
  <div className="shophead">
           <div className="shopHead">
             <div>
-            <p>Zara House</p>
+            <p className="zaratitle">Zara House</p>
             </div>
             <div>
             <div className="cartItem">

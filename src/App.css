@@ -19,7 +19,9 @@
     text-decoration: none;
     z-index: 10;
 }
-
+.Linkers:hover{
+  color:  #1da16a; ;
+}
 .herobtn {
   border-radius: 50px;
   background: #01BF71;

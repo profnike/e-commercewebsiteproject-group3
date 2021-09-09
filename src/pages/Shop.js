@@ -105,7 +105,7 @@ return <Col
 
 
 className="colum" key={index} style={{}}>
-  <Link to={"/details/" +val.id} className="Link"><Card className="cardcontain" style={{ width: '18rem' }}>
+ <Card className="cardcontain" style={{ width: '18rem' }}>
   <Card.Img variant="top" className="cardimg" style={{ objectFit:"cover",height:"250px",maxWidth:"250px",alignSelf:"center" }} src={val.image} />
   <Card.Body className="cardbody">
     <Card.Title className="title">{val.title}</Card.Title>
@@ -120,7 +120,7 @@ className="colum" key={index} style={{}}>
     </div>
   </Card.Body>
 </Card>
-</Link>
+
 </Col>
 
 

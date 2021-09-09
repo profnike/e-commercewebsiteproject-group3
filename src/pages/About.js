@@ -18,10 +18,11 @@ function About(){
     
 return(
     <div >
-        <div className='About-div'>
-         <Link className="arrow-about" to='/'><ArrowBackIcon/> </Link>
-        <h2 className='About-head'> About Zara </h2><br/>
-        </div>
+        
+        <div className="About-div">
+           <Link className="arrow-about" to="/"><ArrowBackIcon/></Link>
+                <h2 className="About-head" style={{textAlign:"center"}}>About Zara</h2>
+            </div>
         <div  className="aboutBody" >
         <div className="founders">
             <h2 className="second-head">Founders of Zara</h2>

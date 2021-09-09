@@ -28,7 +28,8 @@
       border-radius: 10px;
      min-height: 120px;
     align-self: flex-start;
-    
+    min-width: 250px;
+    max-width: 250px;
      margin-right: 5px;
 }
 .rowDivs{
@@ -48,6 +49,7 @@
     max-width: 100%;
     min-width: 100%;
     background-color: rgb(234, 238, 236);
+    background-color:  #047244;
     font-size: 1.5rem;
     z-index: 10000;
     font-weight: bold;
@@ -55,27 +57,34 @@
     padding-right: 24px;
     line-height: 16px;
    position: fixed;
+   
   
   
   
     
 }
+.zaratitle{
+    color: white;
+}
 .shopHead button{
     margin-bottom: 10px;
     background-color: black;
+    
     color: white;
     border: none;
 }
 .shopHead button:focus{
     background-color: black;
+   
    box-shadow: none;
 }
 .shopHead button:hover{
     background-color: black; 
+    
     box-shadow: none;
  }
 .rowDivs button{
-    background-color: black;
+    background-color:  #1da16a;
     color: white;
     border: none;
 }
@@ -83,11 +92,11 @@
     font-size: 18px;
 }
 .rowDivs button:focus{
-    background-color: black; 
+    background-color:  #1da16a; 
     box-shadow: none;
  }
  .rowDivs button:hover{
-    background-color: black; 
+    background-color:  #1da16a;
     box-shadow: none;
  }
 .g-4{

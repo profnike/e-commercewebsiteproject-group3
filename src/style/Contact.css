@@ -42,6 +42,8 @@ align-items: center;
     background-color: rgb(234, 238, 236);
     display: flex;
     color: black;
+    background-color:  #047244;
+    color: white;
 }
 #arrow{
     color: black;

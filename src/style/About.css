@@ -8,18 +8,21 @@
    
   }
 
-.About-div h2{
+.About-divs h2{
     margin: 0px auto;
     padding: 10px;
     margin-bottom: 30px;
     color: rgb(8, 2, 1);
 }
-.About-head{
+.About-heads{
     
     margin: 0px auto;
     text-align: center;
     background-color: rgb(234, 238, 236);
     max-width: 100%;
+    background-color:  #047244;
+  
+   
     
 }
 .photo-about{
@@ -49,15 +52,42 @@
   .second-head{
     text-align: center;
   }
- .About-div{
+ .About-divs{
   background-color: rgb(234, 238, 236);
    margin-bottom: 50px;
+   background-color:  #047244;
    
+   height: 50px;
+   color: white;
+   display: none;
+ }
+ .About-div .About-head{
+   color: white;
  }
  .arrow-about{
   color: black;
  }
-  
+ .arrow-about:hover{
+   color: black;
+ }
+ .About-div{
+  background-color: rgb(234, 238, 236);
+  display: flex;
+  color: black;
+  background-color:  #047244;
+  color: white;
+  margin: 0px auto;
+  text-align: center;
+}
+.About-head{
+   
+   
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  padding: 10px;
+  margin: 0px auto;
+}
   @media screen and (max-width: 960px) {
     .founderlist{
       display: inline-block;

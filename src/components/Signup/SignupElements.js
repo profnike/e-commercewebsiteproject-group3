@@ -11,6 +11,9 @@ export const Container = styled.div`
     z-index: 0;
     overflow: hidden;
     background: hotpink;
+    
+   
+    
 `;
 
 export const FormWrap = styled.div`
@@ -18,7 +21,8 @@ export const FormWrap = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    margin-top:10vh;
+   
     @media screen and (max-width: 480px) {
         height: 80%; 
     }

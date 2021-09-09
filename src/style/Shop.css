@@ -16,6 +16,8 @@
     font-weight: bold;
     padding-left: 24px;
     padding-right: 24px;
+    background-color:  #047244;
+    color: white;
    
   
   
@@ -120,26 +122,35 @@
 }
 .cardcontain button{
     background-color: grey;
+    background-color:  #1da16a;
     border: 1px black solid;
     margin-bottom: 5px;
     font-size: 12px;
-    padding: 3px;
+    padding: 5px;
     border-radius: 5px;
+    color: black;
+    border: none;
    
 }
 .cardcontain button:focus{
-    padding: 3px;
+    padding: 5px;
     border: 1px black solid;
     background-color: grey;
+    background-color:  #1da16a;
     color:white;
+    color: black;
     box-shadow: none;
+    border: none;
 }
 .cardcontain button:hover{
-    padding: 3px;
+    padding: 6px;
     border: 1px black solid;
     background-color: grey;
+    background-color:  #1da16a;
     color:white;
+    color: black;
     box-shadow: none;
+    border: none;
 }
 .Link{
     color: black;
